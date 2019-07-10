@@ -1,3 +1,20 @@
+$blueText: #228BE6
+$greenText: #1AA285
+$orangeText: #FF940D
+$redText: #FD5419
+
+$blueBGC: rgba(211, 232, 250, 1)
+$greenBGC: rgba(189, 247, 223, 1)
+$orangeBGC: rgba(255, 234, 184, 1)
+$redBGC: rgba(255, 211, 209, 1)
+
+$blueHover: rgba(211, 232, 250, 0.25)
+$greenHover: rgba(189, 247, 223, 0.25)
+$orangeHover: rgba(255, 234, 184, 0.25)
+$redHover: rgba(255, 211, 209, 0.25)
+
+
+
 *
   // border: 1px solid rgb(247, 166, 139)
   box-sizing: border-box
@@ -9,7 +26,7 @@ html, body
 
 body
   height: 100vh
-  width: 300px
+  // width: 450px
   margin: auto
   padding-top: 150px
 
@@ -28,6 +45,8 @@ p
 
   box-shadow: 1px 2px 12px 0 rgba(0,0,0,0.10)
 
+  display: none
+
 .select
   height: 45px
   padding-top: 6px
@@ -39,19 +58,19 @@ p
 
 .defaultSelect
   &:hover
-    background-color: rgba(211, 232, 250, 0.25)
+    background-color: $blueHover
 
 .greenSelect
   &:hover
-    background-color: rgba(189, 247, 223, 0.25)
+    background-color: $greenHover
 
 .orangeSelect
   &:hover
-    background-color: rgba(255, 234, 184, 0.25)
+    background-color: $orangeHover
 
 .redSelect
   &:hover
-    background-color: rgba(255, 211, 209, 0.25)
+    background-color: $redHover
 
 
 .tag
@@ -62,7 +81,7 @@ p
   border-radius: 6px
 
 .text
-  color: #228BE6
+  color: $blueText
 
 .check
   margin-right: 24px
@@ -71,16 +90,16 @@ p
 
 
 .defaultSelect .TagShow
-  background-color: rgba(211, 232, 250, 1)
+  background-color: $blueBGC
 
 .greenSelect .TagShow
-  background-color: rgba(189, 247, 223, 1)
+  background-color: $greenBGC
 
 .orangeSelect .TagShow
-  background-color: rgba(255, 234, 184, 1)
+  background-color: $orangeBGC
 
 .redSelect .TagShow
-  background-color: rgba(255, 211, 209, 1)
+  background-color: $redBGC
 
 .CheckShow
   opacity: 1
@@ -89,10 +108,89 @@ p
   color: black
 
 .greenText
-  color: #1AA285
+  color: $greenText
 
 .orangeText
-  color: #FF940D
+  color: $orangeText
 
 .redText
-  color: #FD5419
+  color: $redText
+
+// =============================
+
+.outside
+  width: 450px
+  display: flex
+  justify-content: space-between
+  margin: auto
+
+
+.title
+  display: inline-block
+  padding-top: 5px
+  // width: 30px
+
+.showRoom
+  display: flex
+  width: 360px
+  justify-content: flex-start
+  flex-wrap: wrap
+  margin-bottom: 10px
+
+.spaceTag
+  color: rgb(160, 160, 160)
+  border: 1px dashed rgb(212, 212, 212)
+  font-size: 14px
+  padding: 0px 12px
+  margin-right: 10px
+  margin-bottom: 10px
+  line-height: 32px
+  border-radius: 6px
+  display: inline-block
+  cursor: pointer
+  span
+    color: black
+.tagSustain
+  background-color: $blueBGC
+  color: $blueText
+
+  font-size: 14px
+  padding: 0px 12px
+  margin-right: 10px
+  margin-bottom: 10px
+  line-height: 34px
+  border-radius: 6px
+  display: inline-block
+
+  i
+    cursor: pointer
+
+.add
+  line-height: 34px
+  cursor: pointer
+
+.containerShow
+  display: block
+
+.click
+  width: 100%
+  height: 100%
+  z-index: 0
+  position: absolute
+  left: 0px
+  top: 0px
+
+#showTag3, #showTag4
+  color: $greenText
+  background-color: $greenBGC
+
+#showTag5, #showTag6, #showTag7, #showTag8
+  color: $orangeText
+  background-color: $orangeBGC
+
+#showTag9, #showTag10
+  color: $redText
+  background-color: $redBGC
+
+.displayNone
+  display: none

@@ -10,7 +10,6 @@ html, body {
 
 body {
 	height: 100vh;
-	width: 300px;
 	margin: auto;
 	padding-top: 150px;
 }
@@ -28,6 +27,7 @@ p {
 	height: 300px;
 	overflow-y: scroll;
 	box-shadow: 1px 2px 12px 0 rgba(0, 0, 0, 0.1);
+	display: none;
 }
 
 .select {
@@ -106,4 +106,94 @@ p {
 
 .redText {
 	color: #FD5419;
+}
+
+.outside {
+	width: 450px;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.title {
+	display: inline-block;
+	padding-top: 5px;
+}
+
+.showRoom {
+	display: flex;
+	width: 360px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.spaceTag {
+	color: #a0a0a0;
+	border: 1px dashed #d4d4d4;
+	font-size: 14px;
+	padding: 0px 12px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	line-height: 32px;
+	border-radius: 6px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.spaceTag span {
+	color: black;
+}
+
+.tagSustain {
+	background-color: #d3e8fa;
+	color: #228BE6;
+	font-size: 14px;
+	padding: 0px 12px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	line-height: 34px;
+	border-radius: 6px;
+	display: inline-block;
+}
+
+.tagSustain i {
+	cursor: pointer;
+}
+
+.add {
+	line-height: 34px;
+	cursor: pointer;
+}
+
+.containerShow {
+	display: block;
+}
+
+.click {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#showTag3, #showTag4 {
+	color: #1AA285;
+	background-color: #bdf7df;
+}
+
+#showTag5, #showTag6, #showTag7, #showTag8 {
+	color: #FF940D;
+	background-color: #ffeab8;
+}
+
+#showTag9, #showTag10 {
+	color: #FD5419;
+	background-color: #ffd3d1;
+}
+
+.displayNone {
+	display: none;
 }
